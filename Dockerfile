@@ -22,8 +22,7 @@ RUN set -x \
     && pip install --upgrade pip \
     && pip install awscli \
     && git clone https://github.com/s3tools/s3cmd.git /opt/s3cmd \
-    && ln -s /opt/s3cmd/s3cmd /usr/bin/s3cmd \
-    && chmod 700 /entrypoint.sh
+    && ln -s /opt/s3cmd/s3cmd /usr/bin/s3cmd 
 
 EXPOSE 22
 
